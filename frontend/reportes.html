@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Reportes del Sistema</h1>
+
+    <p><strong>Total de productos:</strong> <span id="totalProductos">0</span></p>
+    <p><strong>Productos con stock bajo (menos de 5):</strong> <span id="stockBajo">0</span></p>
+    <p><strong>Total de ventas registradas:</strong> <span id="totalVentas">0</span></p>
+    <p><strong>Monto total vendido:</strong> $<span id="montoTotal">0.00</span></p>
+
+    <button onclick="window.location.href='dashboard.html'">
+      Volver al Dashboard
+    </button>
+  </div>
+
+  <script src="./js/reportes.js"></script>
+
+</body>
+</html>

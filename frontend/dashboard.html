@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Bienvenido al Sistema</h1>
+
+    <button onclick="window.location.href='productos.html'">
+      Gestionar Productos
+    </button>
+    
+    <button onclick="window.location.href='ventas.html'">
+      Registrar Venta
+    </button>
+
+    <button onclick="window.location.href='reportes.html'">
+      Ver Reportes
+    </button>
+
+    <button onclick="logout()">
+      Cerrar sesión
+    </button>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

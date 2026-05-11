@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ventas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="dashboard" style="width: 900px;">
+    <h1>Registro de Ventas</h1>
+
+    <select id="producto"></select>
+    <input type="number" id="cantidad" placeholder="Cantidad">
+
+    <button onclick="registrarVenta()">Registrar Venta</button>
+    <button onclick="window.location.href='dashboard.html'">Volver</button>
+
+    <h2>Historial de Ventas</h2>
+
+    <table border="1" width="100%" cellpadding="8">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody id="tablaVentas"></tbody>
+    </table>
+  </div>
+
+  <script src="./js/ventas.js"></script>
+
+</body>
+</html>
